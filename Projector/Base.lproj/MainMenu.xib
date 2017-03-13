@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Projector" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="Cnt-XS-n8R" id="0Y4-ws-45e"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="Cnt-XS-n8R">
+            <items>
+                <menuItem title="Volume Up" id="Mff-qr-qI3">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="upClicked:" target="Voe-Tx-rLC" id="i5S-gC-fvS"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Volume Down" id="04X-UV-2LY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="downClicked:" target="Voe-Tx-rLC" id="wYC-gZ-2h2"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="FTM-Bv-W0k"/>
+                <menuItem title="Power On" id="GxC-5P-q33">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onClicked:" target="Voe-Tx-rLC" id="mf8-Xh-MmQ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Power Off" id="N2U-X2-NSH">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="offClicked:" target="Voe-Tx-rLC" id="8H2-3G-pGK"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="z7K-hY-HuC"/>
+                <menuItem title="Quit" id="rQ0-Qc-Nnh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="uPF-HI-RV2"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="75.5" y="174.5"/>
+        </menu>
+    </objects>
+</document>
